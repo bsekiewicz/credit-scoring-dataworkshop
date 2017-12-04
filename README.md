@@ -1,6 +1,6 @@
 ## credit-scoring-dataworkshop
 
-Konkurs był realizowany w ramach kursu "Praktyczne uczenie maszynowe dla programistów" (http://dataworkshop.eu/). Zadaniem konkursu był tak zwany skoring kredytowy (ang. credit_score). 
+Konkurs był realizowany w ramach kursu "Praktyczne uczenie maszynowe dla programistów" (http://dataworkshop.eu/). Zadaniem konkursu był skoring kredytowy (ang. credit score). 
 
 Metryka sukcesu: **AUC**
 
@@ -39,6 +39,7 @@ Metryka sukcesu: **AUC**
 ### Struktura:
 
 * data - folder z danymi surowymi oraz przetworzonymi
+	* dla osób z kursu, które mają dostęp do danych do folderu data należy wrzucić pliki o nazwach train.raw.h5 oraz test.raw.h5 z danymi surowymi
 * scripts - folder ze skryptami pomocniczymi
 	* init0 + init - wczytywanie bibliotek
 	* load_data - szybkie wczytywanie danych
