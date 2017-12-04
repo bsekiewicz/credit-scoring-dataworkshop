@@ -4,8 +4,6 @@ Konkurs był realizowany w ramach kursu "Praktyczne uczenie maszynowe dla progra
 
 Metryka sukcesu: **AUC**
 
-Wynik: ~ 
-
 ### Dane:
 
 * customer_id - ID klienta
@@ -57,8 +55,10 @@ Wynik: ~
 2. Usunąłem outliery (o ile cecha nie obejmowała zbioru testowego, to usuwałem próbki ze zbioru)
 3. Przeanalizowałem zmienne i utworzyłem kilka nowych zmiennych, które od razu się nasunęły + binaryzacja kategorii
 4. Z uwagi na nierównomierny rozkład w zmiennej is_bad skupiłem się na parametrze class_weight dla catboota - wstępnie zadziałało
-5. Do rozważenia:
-	- optymalizacja parametrów
-	- praca na prawdopodobieństwach i przetestowanie jaki parametr podziału byłby najlepszy (ustalenie dla jakich prawdopodobieństw obserwacja zostaje włączona do is_bad = 0, a dla jakich is_bad = 1).
-	- usprawnienie o sieci neuronowe
-	- wylosowanie podzbioru, który zniweluje różnice w klasach (np. tak aby każda obserwacja miała różne customer_id). Wstępne wyniki dawały około 55%, ale z uwagi na znacznie mniejszy zbiór (~20k) metody typu boosting już nie działały tak dobrze.
+
+### Do rozważenia:
+
+* optymalizacja parametrów
+* praca na prawdopodobieństwach i przetestowanie jaki parametr podziału byłby najlepszy (ustalenie dla jakich prawdopodobieństw obserwacja zostaje włączona do is_bad = 0, a dla jakich is_bad = 1).
+* usprawnienie o sieci neuronowe
+* wylosowanie podzbioru, który zniweluje różnice w klasach (np. tak aby każda obserwacja miała różne customer_id). Wstępne wyniki dawały około 55%, ale z uwagi na znacznie mniejszy zbiór (~20k) metody typu boosting już nie działały tak dobrze.
